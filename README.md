@@ -30,7 +30,7 @@
 * AccuInsight+ Pipe를 통해 S3에 저장된 데이터를 전처리 한다.
 * AccuInsight+ Pipe에서 전처리한 데이터는 hdfs에 저장한다.                      (EDA에서는 S3사용 혹은 PC에 다운로드)
 * AccuInsight+ Modeler를 통해 이상행위 판별 모델을 생성한다.
-* AccuInsight+ Modeler에 RestFul 웹서비스로 FDS의 이상행위 탐지 모델을 구현한다.
+* AccuInsight+ Modeler에 RestFul 웹서비스로 추천 모델을 구현한다.
 * Asset화 하여 향후 타부서 사용할 수 있게 한다.
 * 단, 외부 시스템(데이터 수집서버, Client)등은 구현하지 않는다.
 
