@@ -9,17 +9,20 @@
 # 데이터 설명
 * 입금, 출금, 대출, 지불, 송금등의 거래에서 이행행위에 대한 데이터
 ## Column Desc
-|컬럼명           | 설명                                                                    |Type |
-|-----------------|-------------------------------------------------------------------------|-----|
-|type             | 지불 방식(1 : CASH IN, 2: CASH OUT, 3 :DEBIT, 4 : PAYMENT, 5 : TRANSFER)|International -범주형|
-|amount           | 거래금액                                                                |Decimal|
-|nameOrig         | 송금회원                                                                |String|
-|oldbalanceOrig   | 송금회원_거래전 잔고                                                    |Decimal|
-|newbalanceOrig   | 송금회원_거래후 잔고                                                    |Decimal|
-|nameDest         | 수취회원                                                                |String|
-|oldbalanceDest   | 수취회원_거래전 잔고                                                    |Decimal|
-|newbalanceDest   | 수취회원_거래후 잔고                                                    |Decimal|
-|isFraud          | 사기거래 여부                                                           |Int-범주형|
+|no|컬럼명           | 설명                                                                    |Type |
+|--|-----------------|-------------------------------------------------------------------------|-----|
+|0|id             | 고객의 고유 ID                                                                |int64 |
+|1|Gender           | 성별                                                                   |object|
+|2|Age         | 나이                                                                        |int64|
+|3|Driving_License   |  0 - 운전면허 미보유, 1 - 운전면허 보유                                                |int64|
+|4|Region_Code   | 고객 지역의 고유 코드                                                               |float64|
+|5|Previously_Insured  | 1 - 자동차 보험 가입, 0 - 자동차 보험 미가입                                       |int64|
+|6|Vehicle_Age   | 차량의 년식                                                                |object|
+|7|Vehicle_Damage   | 1 - 사고 이력 있음. 0 - 사고 이력 없음                                             |object|
+|8|Annual_Premium          | 고객이 연도에 보험료로 지불해야하는 금액                                         |float64|
+|9|Policy_Sales_Channel          | 고객에게 연락하는 채널. 다른 상담원, 우편, 전화, 직접 방문 등                   |float64|
+|10|Vintage          | 고객이 회사와 연결된 일 수                                                                  |int64|
+|11|Response          | 1 - 관심을 보임, 0 - 관심을 보이지 않음.                                                 |int64|
 
 
 # 분석 시나리오
